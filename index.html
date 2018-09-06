@@ -1,1 +1,238 @@
-hello modernmobile site2
+
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CSE 546</title>
+  <meta name="description" content="Machine Learning">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+  <body>
+    <header class="site-header">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">CSE 599 N1: Modern Mobile Systems</a>
+    </div>
+<!--     <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a>17au</a></li>
+      </ul>
+    </div> -->
+    <!-- /.nav-collapse -->
+  </div><!-- /.container -->
+</div><!-- /.navbar -->
+
+</header>
+
+
+<div class="container" width=50%>
+    
+<div class="panel-footer clearfix">
+<h1>CSE 599 N1, Autumn 2018 Modern Mobile Systems</h1>
+
+<p class="lead">Lecture: Wednesday, Friday 2:00-3:20  Room: <a href="http://www.washington.edu/maps/#!/tbd">TBD</a> TBD  </p>
+<p class="lead">Instructor: <a href="http://staff.washington.edu/rajaln/">Rajalakshmi Nandakumar</a> and <a href="http://homes.cs.washington.edu/~jucha/">Justin Chan</a> </p>
+<p class="lead">Contact: {rajaln,jucha}@cs.washington.edu</p>
+<p class="lead">Office Hours by appointment</p>
+</div>
+<hr>
+
+<h2>About the Course</h2>
+Do you want to learn about cool emerging technologies like using smartphones to diagnose diseases and health disorders? Do you want to explore novel interfaces that will redefine the future of virtual reality systems? Everyday, we are awash in wireless signals that are used for communication, but did you know that we can also leverage these signals for many other applications. Our smartphones today are full of highly capable sensors that we can use to do everything from healthcare monitoring to motion tracking. Our class explores the unconventional approaches that allow ubiquitous sensors and signals to solve real world problems. You will gain hands on experience applying signal processing and machine learning algorithms to tackle issues that affect millions of people. Students from all areas of computer science and engineering are welcome, there are no prerequisites.
+
+<br/>
+<br/>
+<HR>
+
+<h2>Grading and Evaluation</h2>
+<p>
+Your grade will be based on 3 homework assignments (65%) and a final project (35%). 
+</p>
+
+<h3>Homework</h3> 
+
+<p>
+<b>COLLABORATION POLICY</b>: Homework must be done individually: each student must hand in their own answers. In addition, each student must write and submit their own code in the programming part of the assignment (we may run your code). It is acceptable, however, for students to collaborate in figuring out answers and helping each other solve the problems. You must also indicate on each homework with whom you collaborated.
+</p>
+
+<p>
+<b>RE-GRADING POLICY</b>: All grading related requests must be submitted to the TA via email only. Office hours and in person discussions are limited solely to asking knowledge related questions, not grade related questions. If you feel that we have made an error in grading your homework, please let us know with a written explanation, and we will consider the request. Please note that regrading of a homework may cause your grade to go up or down on the entire homework set.
+</p>
+
+<p>
+<b>LATE POLICY</b>: Homeworks must be submitted by the posted due date. <b>There is no credit for late work.</b> The homework scoring system of above is an attempt to minimize the harshness of this policy.
+</p>
+
+<p>
+NO EXCEPTIONS WILL BE GIVEN TO THE GRADING POLICIES (unless based on university policies, e.g. medical reasons). IF YOU ARE NOT ABLE TO COMPLY WITH THE LATE HOMEWORK POLICY, DUE TO TRAVEL, CONFERENCES, OTHER DEADLINES, OR ANY OTHER REASON, DO NOT ENROLL IN THE COURSE.
+</p>
+
+<p>
+<b>HONOR CODE</b>: As we sometimes reuse problem set questions from previous years, covered by papers and webpages, we expect the students not to copy, refer to, or look at the solutions in preparing their answers (referring to unauthorized material is considered a violation of the honor code). Similarly, we expect students not to google directly for answers. The homework is to help you think about the material, and we expect you to make an honest effort to solve the problems. If you do happen to use other material, it must be acknowledged clearly with a citation on the submitted solution. For more information, please see the <a href="https://www.cs.washington.edu/students/policies/misconduct">CSE Academic Misconduct policy</a> that this course adheres to. 
+</p>
+
+<h3>Project</h3>
+<p>You will work independently or with a partner on a mobile systems project spanning most of the quarter ending with a poster presentation and written report. The project should address a novel question. The components of the project are</p>
+<ul>
+  <li><b>Project Proposal (5 points)</b>: A one page maximum description of your project with: 1) project title, 2) dataset(s), 3) Project idea (two paragraphs), 4) Software you will write and/or use, 5) papers to read (include 1-3 relevant papers), 6) will you have a teammate?, and 7) what will you complete by the milestone (experimental results are expected)?</li>
+  <li><b>Project Milestone (10 points)</b>: Your write up should be 3 pages maximum not including references. You should describe the results of your first experiments here and what you wish to accomplish before the final presentation and paper submission. Note that, as with any conference, the page limits are strict! Papers over the limit will not be considered.</li>
+  <li><b>Poster presentation (20 points)</b>: We will hold a poster session in the Atrium of the Paul Allen Center. Each team will be given a stand to present a poster summarizing the project motivation, methodology, and results. The poster session will give you a chance to show off the hard work you put into your project, and to learn about the projects of your peers. Both one large poster or several pinned pages are OK (fonts should be easily readable from 5 feet away).</li>
+  <li><b>Project Report (65 points)</b>: Your write up should be 8 pages maximum. You should describe the task you solved, your approach, the algorithms, the results, and the conclusions of your analysis. Note that, as with any conference, the page limits are strict! Papers over the limit will not be considered.</li>
+</ul>
+<br/>
+<hr>
+
+<h2>Homework</h2>
+
+<!-- <ul>
+  <li>Homework 0: Warm up (10 points)</li>
+  <ul>
+    <li>Due: 11:59 PM Thursday October 5</li>
+    <li>Homework: <a href="resources/hw0.pdf">PDF</a>
+  </ul>
+  <li>Homework 1: Linear Regression, Cross-validation (25 points)</li>
+  <ul>
+    <li>Due: 11:59 PM Tuesday October 17</li>
+    <li>Homework: <a href="resources/hw1.pdf">PDF</a>
+  </ul>
+  <li>Homework 2: Classification, Lasso, Optimization (25 points)</li>
+  <ul>
+    <li>Due: Thursday November 2</li>
+    <li>Homework: <a href="resources/hw2.pdf">PDF</a>, <a href="resources/yelp_data.zip">data for problem 4</a>
+  </ul>
+  <li>Homework 3: Kernels, Unsupervised Learning, Matrix completion (25 points)</li>
+  <ul>
+    <li>Due: Tuesday November 21</li>
+    <li>Homework: <a href="resources/hw3.pdf">PDF</a>, <a href="resources/jester.zip">data for problem 4</a>
+  </ul>
+  <li>Homework 4: Convex Optimization, Deep Learning (25 points)</li>
+  <ul>
+    <li>Due: Tuesday December 5</li>
+    <li>Homework: <a href="resources/hw4.pdf">PDF</a></li>
+  </ul>
+</ul>
+<br> -->
+<hr>
+
+<h2>Important Dates</h2>
+<!-- <div class="row">
+<div class="col-xs-12 col-sm-4">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Deliverable Due</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active">
+                <td>10/5</td>
+                <td>Homework 0
+                </td>
+            </tr>
+            <tr class="active">
+                <td>10/17</td>
+                <td>Homework 1
+                </td>
+            </tr>
+            <tr class="success">
+                <td>10/24</td>
+                <td>Project proposal
+                </td>
+            </tr>
+            <tr class="active">
+                <td>11/2</td>
+                <td>Homework 2
+                </td>
+            </tr>
+            <tr class="success">
+                <td>11/14</td>
+                <td>Project milestone
+                </td>
+            </tr>
+            <tr class="active">
+                <td>11/21</td>
+                <td>Homework 3
+                </td>
+            </tr>
+            <tr class="active">
+                <td>12/5</td>
+                <td>Homework 4
+                </td>
+            </tr>
+            <tr class="success">
+                <td>12/7</td>
+                <td>Poster presentation
+                </td>
+            </tr>
+            <tr class="success">
+                <td>12/7</td>
+                <td>Project report due
+                </td>
+            </tr>
+            <tr class="success">
+                <td>12/14</td>
+                <td>Project Reviews due
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="col-xs-12 col-sm-8"></div>
+</div> -->
+<hr>
+
+<h2>Schedule</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Material</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sept 26</td>
+      <td>Introduction</td>
+    </tr>
+    <tr>
+      <td>Sept 28</td>
+      <td>History</td>
+    </tr>
+</tbody>
+</table>
+
+
+
+
+
+
+</ul>
+</div>
+    
+
+
+<footer class="site-footer">
+    <div class="cse-wordmark"><img src="img/CSEWordmark_sm.png" alt="CSE Wordmark" /></div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
