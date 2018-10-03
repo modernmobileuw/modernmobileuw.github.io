@@ -43,17 +43,32 @@
 You will build your first smartphone app that uses the built-in sensors for something useful. This app will count the number of steps that you have taken and show that number on the screen. You will be using the raw data from the accelerometer and/or gyroscope to complete this task. The data will require some very simple signal processing. You can use peak detection, zero crossing, or your own technique for counting. You can assume the user only holds the phone in a fixed posture in their hands. You are welcome to assume a different placement or posture of the phone, but please be sure to document how the device needs to be held somewhere on the interface.
 
 It is recommended that you use the Android platform for this project. If you wish to do it on an iPhone that is ok as well. If you do not have access to an Android device, contact the instructors promptly.
+<br/><br/>
+Checkpoints and recommended steps:
+<ol>
+<li>Create a project in Android Studio (or other IDE). Look up the API to poll data from the accelerometer and gyroscope.</li>
+<li>Continuously print values from the accelerometer and gyroscope to the logging terminal</li>
+<li>Output these values to a persistent file on disk</li>
+<li>Have a 'data collector' app that includes a start and stop button. When you press the start button, these IMU (inertial measurement unit) values should start logging to a file, when the stop button is pressed, stop polling from the sensor.</li>
+<li>Start collecting data with this app by walking in a line, in a circle, in zig zag motions and at different speeds. For each test record ground truth values, that is, record the number of steps taken in a single session. Conduct this testing systematically and multiple times.</li>
+<li>Examine these logged files in Matlab, Python/matploblib/iPython or other data visualization tool of your choice</li>
+<li>Identify the peaks and troughs that are characteristic of a single step</li>
+<li>In Matlab explore different simple signal processing techniques to use to capture the peaks of a step. Matlab functions to explore are 
 
-Grading:
-(50 points) We will briefly examine your code to ensure that you are using some form of signal processing to calculate a step count.
-(50 points) To test your app's performance, you will take 10 steps with the phone in your hand during class. You will get full credit if your step counter is within 1 (i.e., it estimates 9-11). -5 points for each extra or missing step.
-Starting Materials:
-Starter code: link
-Instructions for setting up the Huawei Honor 4 phone: link
-Deliverables:
-Source code (.zip, .tar, or GitHub link): link
-In-class demo
+<ul>
+	<li>movmean (smoothes/averages curve)</li>
+	<li>findpeaks (explore the different parameter options)</li>
+	<li>butter (for filtering)</li>
+	<li>mean (for subtracting DC bias)</li>
+</ul>
 
+<li>Develop an algorithm that you can run over each data file that reliably and accurately outputs the number of steps taken</li>
+<li>Implement this algorithm on a smartphone. After each walk session, run the algorithm on the saved data file and output the number of steps taken to the phone's screen</li>
+<li>Extra credit: Have the algorithm run continuously on streaming data so that the step counts are printed to the screen in real time as the steps are taken.</li>
+</ol>
+<br/>
+Grading will be based on a 'demo or die' presentation of the system and the submitted code. If the step count is within 1 or 2 steps of the ground truth, we will award full points.
+<br/><br/>
 <footer class="site-footer">
     <div class="cse-wordmark"><img src="img/CSEWordmark_sm.png" alt="CSE Wordmark" /></div>
 </footer>
