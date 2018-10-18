@@ -41,12 +41,12 @@
    
 <h2>Assignment 1: Gesture based interaction System</h2>
 
-In this assignment, you will build a gesture based interaction system using the acoustic sensors in your device. The system has to identify three different gestures defined by you. You can choose any three gestures of your choice.
+In this assignment, you will build a gesture based interaction system using the acoustic sensors in your device. The system has to identify <b>three</b> different gestures defined by you. You can choose any three gestures of your choice.
 <br><br>
 
-<h3>How should it work ? </h3>
+<h3>How should it work? </h3>
 
-Your system should use the device&#39;s speaker to continuously emit a tone (sine wave of any specific frequency). Now when a user performs a hand gesture, their hands will reflect this sound wave. The\is reflection will vary depending upon the gesture performed. So, the system should record the reflections using the device&#39;s microphone. Finally, the system should process the recording from the microphone to identify the gesture performed. 
+Your system should use the device's speaker to continuously emit a tone (sine wave of any specific frequency). Now when a user performs a hand gesture, their hands will reflect this sound wave. The is reflection will vary depending upon the gesture performed. So, the system should record the reflections using the device's microphone. Finally, the system should process the recording from the microphone to identify the gesture performed. 
 <br><br>
 
 <h3>What processing you need to implement ?</h3>
@@ -62,16 +62,16 @@ The device can be a laptop or a Smartphone.
 <br><br>
 <h3>What will be tested ?</h3>
  <br>
-  Grading will be based on a &#39;demo or die&#39; presentation of the system and the submitted code. The students should perform all the three gestures and the system should display the name of the gesture performed in a screen.
+  Grading will be based on a "demo or die" presentation of the system and the submitted code. The students should perform all the three gestures and the system should display the name of the gesture performed in a screen.
 <br><br>
 
 <h3>Checkpoints and recommended steps:</h3>
 <ol>
-<li>Write code to access speaker and microphone in your device. Your system should play a tone continuously in a loop using the speaker and simultaneously also record using the device&#39;s microphone. You can use any language of your choice. </li>
+<li>Write code to access speaker and microphone in your device. Your system should play a tone continuously in a loop using the speaker and simultaneously also record using the device's microphone. You can use any language of your choice. </li>
 <li>Stream the microphone data to the processing function. You can use shared buffers, Threads etc for implementation. Again you can use any language or software like MATLAB.</li>
 <li>Examine this microphone data in Matlab, Python/matploblib/iPython or other data visualization tool of your choice.</li>
 <li>Start performing the gestures one by one with sufficient time gap in between them. Whenever you are performing the gesture, use the visualization tool to see the change in the signal received.</li>
-<li>In addition to plotting the raw signal, you might have to plot FFT&#39;s of the signals to see the variation for each of these gestures.</li>
+<li>In addition to plotting the raw signal, you might have to plot FFTs of the signals to see the variation for each of these gestures.</li>
 <li>Once you understand the difference between the gestures, write code to automatically identify the gesture.</li>
 <li>Your code should be two fold. For each time period, it should first identify whether a gesture was performed. If it is, then it should classify the gesture.</li>
 <li>Some of the functions that could be useful are FFT and spectrogram.</li>
